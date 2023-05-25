@@ -6,5 +6,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-addressable-pairing-heap =  "^0.2.0"
 rand = "^0.8.5"
+num_cpus = "1.0"
