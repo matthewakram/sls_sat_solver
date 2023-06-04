@@ -12,8 +12,8 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     let (clauses, num_vars) =
         input_output::read_write_file::import_sat_formula(args[1].clone()).unwrap();
-    let out_file = args[2].clone();
-    let num_threads = if args.len() > 3 {
+    let out_file: String = args[2].clone();
+    let num_threads: usize = if args.len() > 3 {
         args[3].parse::<usize>().unwrap()
     } else {
         num_cpus::get()
