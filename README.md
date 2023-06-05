@@ -24,6 +24,8 @@ To run the program use
 cargo run -r <formula file> <output file> <numthreads (default=num available threads)>
 ```
 
+Make sure to not forget the -r, since without that the code is not optimised.
+
 ## Input ouput format
 The formula provided to the program must be in DIMACS form
 The output of the program is written to the given output file.
